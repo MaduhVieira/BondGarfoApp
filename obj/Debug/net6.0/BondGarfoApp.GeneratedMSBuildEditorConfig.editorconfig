@@ -15,8 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\maria\OneDrive\Documentos\Ciencias da computacção\5º Semestre 2023\Favan - Desenvolvimento de Sistemas de Informação\BondGarfoApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/maria/OneDrive/Documentos/Ciencias da computacção/5º Semestre 2023/Favan - Desenvolvimento de Sistemas de Informação/BondGarfoApp/Views/HelloWorld/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxpbmRleC5jc2h0bWw=
+[C:/Users/maria/OneDrive/Documentos/Ciencias da computacção/5º Semestre 2023/Favan - Desenvolvimento de Sistemas de Informação/BondGarfoApp/Views/HelloWorld/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxDYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maria/OneDrive/Documentos/Ciencias da computacção/5º Semestre 2023/Favan - Desenvolvimento de Sistemas de Informação/BondGarfoApp/Views/HelloWorld/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maria/OneDrive/Documentos/Ciencias da computacção/5º Semestre 2023/Favan - Desenvolvimento de Sistemas de Informação/BondGarfoApp/Views/HelloWorld/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxXZWxjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maria/OneDrive/Documentos/Ciencias da computacção/5º Semestre 2023/Favan - Desenvolvimento de Sistemas de Informação/BondGarfoApp/Views/Home/Index.cshtml]
