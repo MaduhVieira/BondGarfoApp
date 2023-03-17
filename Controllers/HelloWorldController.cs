@@ -44,7 +44,7 @@ public class HelloWorldController : Controller
         strogonof.ingredientes ="baba de piolho irlandes";
         strogonof.categoria = "prato principal";
         strogonof.preco = 23.30;
-        strogonof.validade =2000-01-23;
+        strogonof.validade ="2000-01-23";
 /*
         ViewData["nome"] = "Patrícia Mariane Marli Silva";
         ViewData["cpf"] = "153.651.221-43";
