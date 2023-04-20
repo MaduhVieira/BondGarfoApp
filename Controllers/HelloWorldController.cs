@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc; 
+using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 using BondGarfoApp.Models;
 
@@ -6,17 +6,13 @@ namespace BondGarfoApp.Controllers;
 
 public class HelloWorldController : Controller
 {
-    //Index
-    /*public string Index()
-    {
-        return "Essa é a ação Padrão";
-    }*/
+    // Index
     public IActionResult Index()
     {
         return View();
     }
 
-    //Welcome
+    // Welcome
     /*public string Welcome()
     {
         return "Essa é a ação Bem-Vindo";
@@ -28,9 +24,9 @@ public class HelloWorldController : Controller
         );
     }*/
 
-    public IActionResult Welcome (String nome, int ID= 1)
+    public IActionResult Welcome(string nome, int ID =1)
     {
-        ViewData["Mensagem"] = "Ola " + nome;
+        ViewData["Mensagem"] = "Ola "+nome;
         ViewData["ID"] = ID;
 
         return View();
@@ -38,21 +34,25 @@ public class HelloWorldController : Controller
 
     public IActionResult Cadastro()
     {
+        
         var strogonof = new Prato();
-        strogonof.Id =  120;
-        strogonof.nome = "strogg";
-        strogonof.ingredientes ="baba de piolho irlandes";
-        strogonof.categoria = "prato principal";
-        strogonof.preco = 23.30;
-        strogonof.validade ="2000-01-23";
-/*
-        ViewData["nome"] = "Patrícia Mariane Marli Silva";
-        ViewData["cpf"] = "153.651.221-43";
-        ViewData["DataNasc"] = "06/03/1986";
-        ViewData["email"] = "patriciamarianesilva@riquefroes.com";*/
 
+        strogonof.Id = 101;
+        strogonof.nome = "Strogonoff de Carne";
+        strogonof.ingredientes = "Filet Mignon com champignon, com arroz e batata palha";
+        strogonof.categoria = "Prato Principal";
+        //strogonof.preco = 19.90;
+        //strogonof.validade = "2023-03-17";
+        /*ViewData["Nome"] = "Regina Andrea Eduarda Cavalcanti";
+        ViewData["cpf"] = "106.950.242-13";
+        ViewData["dtnasc"] = "03/02/1964";
+        ViewData["email"] = "regina.andrea.cavalcanti@cordeiromaquinas.com.br";
+        */
         return View();
     }
 
 
+
+
 }
+

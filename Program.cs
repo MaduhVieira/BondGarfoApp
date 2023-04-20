@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<BondGarfoAppContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("BondGarfoAppContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

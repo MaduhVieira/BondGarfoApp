@@ -1,0 +1,48 @@
+@model BondGarfoApp.Models.Prato
+
+@{
+    ViewData["Title"] = "Informações de Pratos";
+}
+
+<h1>Informações de Pratos</h1>
+
+<div>
+    <h4>Prato</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ingredientes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ingredientes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.categoria)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.categoria)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.preco)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.preco)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.validade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.validade)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
