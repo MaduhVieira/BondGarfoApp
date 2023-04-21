@@ -16,4 +16,7 @@ public class Prato
     [DataType(DataType.Date)]
     public DateTime validade {get; set;}
     
+
+    //Relacionar com Categorias
+    public virtual Categoria Categoria{get;set;}
 }

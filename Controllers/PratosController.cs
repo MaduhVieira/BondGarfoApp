@@ -21,7 +21,10 @@ namespace BondGarfoApp.Controllers
         // GET: Pratos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Prato.ToListAsync());
+            var BondGarfoAppContext = _context.Prato
+                    .Include(p=> p.Categoria);
+
+            return View(await BondGarfoAppContext.ToListAsync());
         }
 
         // GET: Pratos/Details/5
