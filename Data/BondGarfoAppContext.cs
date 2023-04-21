@@ -13,4 +13,8 @@ using BondGarfoApp.Models;
         }
 
         public DbSet<BondGarfoApp.Models.Prato> Prato { get; set; }
+
+        public DbSet<BondGarfoApp.Models.Categoria> Categoria { get; set; }
+
+        public DbSet<BondGarfoApp.Models.Bebidas> Bebidas { get; set; }
     }

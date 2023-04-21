@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,38 +10,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BondGarfoApp.Migrations
 {
     [DbContext(typeof(BondGarfoAppContext))]
-    partial class BondGarfoAppContextModelSnapshot : ModelSnapshot
+    [Migration("20230421000550_TabelaCategoria")]
+    partial class TabelaCategoria
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.0");
-
-            modelBuilder.Entity("BondGarfoApp.Models.Bebidas", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("categoria")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ingredientes")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("nome")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("preco")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Bebidas");
-                });
 
             modelBuilder.Entity("BondGarfoApp.Models.Categoria", b =>
                 {
